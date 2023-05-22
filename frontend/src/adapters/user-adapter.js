@@ -8,8 +8,8 @@ export const createUser = async ({ username, password }) => (
 
 // eating errors here for simplicity
 export const getAllUsers = async () => {
-  const [data] = await fetchHandler(baseUrl);
-  return data || [];
+  const [users] = await fetchHandler(baseUrl);
+  return users || [];
 };
 
 export const getUser = async (id) => fetchHandler(`${baseUrl}/${id}`);
