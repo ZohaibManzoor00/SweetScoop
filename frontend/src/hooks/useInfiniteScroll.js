@@ -12,7 +12,7 @@ const useInfiniteScroll = url => {
     setLoading(true);
     setNum(num + 1)
     try {
-      // if (num === 1) throw new Error("MY ERROR")
+      if (num === 1) throw new Error("MY ERROR")
       const [content, _err] = await fetchHandler(url);
       setData(prevData => [...prevData, ...content.results]);
       setHasMore(content.results.length > 0);
