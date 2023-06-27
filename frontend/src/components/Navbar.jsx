@@ -22,7 +22,7 @@ import { logUserOut } from "../adapters/auth-adapter";
 const callsToAction = [
   { name: "Watch a demo", href: "/demo", icon: PlayCircleIcon },
   { name: "Contact us", href: "/contact", icon: PhoneIcon },
-  { name: "View all creations", href: "/market", icon: RectangleGroupIcon }
+  { name: "View all creations", href: "/market", icon: RectangleGroupIcon },
 ];
 
 export default function Navbar() {
@@ -72,7 +72,7 @@ export default function Navbar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <span className="sr-only">SweetScoop</span>
+          <span className="sr-only">SweetScoop!</span>
 
           <NavLink to="/">
             <p className="text-lg font-semibold text-amber-900">SweetScoop</p>
